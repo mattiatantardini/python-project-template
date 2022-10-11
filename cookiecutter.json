@@ -1,0 +1,9 @@
+{
+    "project_type": [
+        "simple_project",
+        "package"
+    ],
+    "_copy_without_render": [
+        "__cc_*"
+    ]
+}
