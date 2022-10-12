@@ -1,13 +1,19 @@
-import logging
+"""
+Define here all utility functions that are general purpose and can be used
+across the wole program.
+"""
+from typing import List, Dict
 
-# Define the logs and set verbosity
-def configure_logging(verbosity="INFO"):
-    log_level = logging.getLevelName(verbosity)
-    if isinstance(log_level, int):
-        logging.basicConfig(
-            level=log_level,
-            format="[%(levelname)s] %(asctime)s | %(message)s | in function: %(funcName)s",
-            force=True, # see https://stackoverflow.com/questions/73882299/python-logging-messages-not-showing-up-due-to-imports/73882890#73882890
-        )
-    else:
-        raise NotImplementedError(f"Logging level {verbosity} does not exist!")
+
+def pick_by_id(llist: List[object], id_value: str) -> Dict[object, object]:
+    """
+    Returns an element of a list, which is supposed to be adictionary with an "id" field.
+
+    Args:
+        llist (List[object]): list to iterate on.
+        id_value (str): value of the id.
+
+    Returns:
+        Dict[object, object]: found element
+    """
+    return [ll for ll in llist if ll["id"] == id_value][0]
