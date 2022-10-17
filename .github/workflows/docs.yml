@@ -13,10 +13,10 @@ jobs:
           virtualenvs-in-project: true
       - name: Install dependencies
         run: |
-          poetry install --only docs
+          poetry install --only docs --no-interaction --no-root
       - name: Sphinx build
         run: |
-          sphinx-build docs build
+          source .venv/bin/activate && sphinx-build docs build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
