@@ -5,6 +5,7 @@ Welcome to Python Project Template documentation!
    :maxdepth: 3
    :caption: Contents:
 
+   readme
    objectives
 
 
