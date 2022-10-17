@@ -11,10 +11,10 @@ jobs:
         with:
           virtualenvs-create: true
           virtualenvs-in-project: false
-          virtualenvs-path: ~/.venv
+          virtualenvs-path: .venv
       - name: Install dependencies
         run: |
-          poetry install --only docs
+          source .venv/bin/activate && poetry install --only docs
       - name: Sphinx build
         run: |
           sphinx-build docs build
