@@ -11,6 +11,10 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install --only docs
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: false
+          virtualenvs-path: ~/.venv
       - name: Sphinx build
         run: |
           sphinx-build docs build
