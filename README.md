@@ -26,5 +26,8 @@ cookiecutter git@github.com:mattiatantardini/python-project-template.git
 
 You will be asked to choose among the available templates and some additional information (project name, project directory, etc.) to set up the project.
 
+## Docs
+You can find modere detailed documentation about this project, how to use this template and an explanation on the tools used in the [github pages](https://mattiatantardini.github.io/python-project-template/) of the repo.
+
 ## Contribution
 Any comment, feedback and contribution is very welcomed! Please use the github issue tracker as a preferential way to give your contribution.
