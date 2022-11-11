@@ -1,6 +1,6 @@
 {
     "project": "My project",
-    "author": "Intellera",
+    "author": "author",
     "pkg_name": "{{ cookiecutter.project|lower|replace(' ', '_') }}",
     "directory_name": "{{ cookiecutter.pkg_name|replace('_','-') }}"
 }
