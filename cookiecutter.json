@@ -4,6 +4,7 @@
         "package"
     ],
     "_copy_without_render": [
-        "__cc_*"
+        "__cc_*",
+        ".github/workflows"
     ]
 }
