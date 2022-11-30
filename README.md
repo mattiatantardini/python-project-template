@@ -8,8 +8,8 @@ The project templates defined in this repository comes with the following tools:
 - [poetry](https://python-poetry.org/): package dependecy management tool
 - [pre-commit](https://pre-commit.com/): run pre-commit hooks 
 - [pytest](https://docs.pytest.org/en/7.1.x/): easily write and run tests
-- [sphinx](https://www.sphinx-doc.org/en/master/): documentation generation for code and project
-- [ci/ci](): tbd
+- [sphinx](https://www.sphinx-doc.org/en/master/): documentation generation for code and project. Github Action workflows already defined to automatically publish on github pages.
+- [semantic-release](https://github.com/python-semantic-release/python-semantic-release): automatic versioning of the code through semantic release.
 - logging: basic configuration for logging using the `logging` python package
 
 ## Usage
