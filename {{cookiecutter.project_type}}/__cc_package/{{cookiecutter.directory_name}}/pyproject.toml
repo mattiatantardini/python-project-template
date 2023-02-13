@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "{{cookiecutter.pkg_name}}"
-version = "0.1.0"
+version = "0.0.0"
 description = "Python package template"
 authors = ["{{cookiecutter.author}}"]
 
