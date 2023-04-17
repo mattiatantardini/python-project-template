@@ -6,6 +6,7 @@ authors = ["{{cookiecutter.author}}"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+tantaroba = "^0.4.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^2.20.0"

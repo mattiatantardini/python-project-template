@@ -1,6 +1,6 @@
 import logging
 
-from settings.log import configure_logging
+from tantaroba.log import configure_logging
 
 
 if __name__ == "__main__":
