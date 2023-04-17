@@ -28,7 +28,7 @@ jobs:
   - script: |
       git config --global user.email "$(CI_EMAIL)" && git config --global user.name "$(CI_USERNAME)"
       pip install commitizen
-      cz bump --check-consistency --changelog
+      cz bump --check-consistency --changelog --yes
       git push --tags origin HEAD:main
     condition: eq(variables.IS_MAIN, true)
     displayName: 'Bump package version number'
