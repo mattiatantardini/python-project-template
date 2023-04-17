@@ -1,8 +1,8 @@
 FROM python:3.10.8-slim
 
 # Metadata
-LABEL name="Service Name"
-LABEL maintainer="Maintainer Name"
+LABEL name={{cookiecutter.project}}
+LABEL maintainer={{cookiecutter.author}}
 
 # Install poetry
 ARG DEBIAN_FRONTEND=noninteractive
@@ -21,7 +21,6 @@ RUN /root/.local/bin/poetry config virtualenvs.create false
 RUN /root/.local/bin/poetry install --only main --no-interaction --no-ansi
 
 # Copy all files
-COPY common ./common
 COPY settings ./settings
 COPY docker/start.sh .
 COPY main.py .
