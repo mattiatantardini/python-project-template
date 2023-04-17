@@ -1,0 +1,34 @@
+trigger:
+- main
+
+variables:
+  IS_MAIN: $[eq(variables['build.sourceBranch'], 'refs/heads/main')]
+  CI_USERNAME: "CI Bot"
+  CI_EMAIL: ci-bot@azure.com
+
+jobs:
+- job: 'semantic_release'
+  pool:
+    vmImage: 'ubuntu-latest'
+  strategy:
+    matrix:
+      Python39:
+        python.version: '3.9'
+
+  steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '$(python.version)'
+
+  - checkout: self
+    fetchDepth: "0"
+    persistCredentials: "true"
+    clean: "true"
+
+  - script: |
+      git config --global user.email "$(CI_EMAIL)" && git config --global user.name "$(CI_USERNAME)"
+      pip install commitizen
+      cz bump --check-consistency --changelog --yes
+      git push --tags origin HEAD:main
+    condition: eq(variables.IS_MAIN, true)
+    displayName: 'Bump package version number'

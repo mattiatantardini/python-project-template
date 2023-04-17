@@ -1,6 +1,7 @@
 {
     "project_type": [
         "simple_project",
+        "simple_streamlit",
         "package"
     ],
     "_copy_without_render": [
