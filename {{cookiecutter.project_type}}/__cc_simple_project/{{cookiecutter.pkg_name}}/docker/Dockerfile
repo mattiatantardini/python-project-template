@@ -8,7 +8,7 @@ LABEL maintainer={{cookiecutter.author}}
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y && apt-get install -y curl
 
-ARG POETRY_VERSION=1.2.2
+ARG POETRY_VERSION=1.5.0
 RUN curl -sSL https://install.python-poetry.org | python3 - --version $POETRY_VERSION
 
 # Set working directory
