@@ -2,7 +2,7 @@ FROM python:3.10.8-slim
 
 # Metadata
 LABEL name={{cookiecutter.project}}
-LABEL maintainer={{cookiecutter.author}}
+LABEL maintainer=<author>
 
 # Install poetry
 ARG DEBIAN_FRONTEND=noninteractive
