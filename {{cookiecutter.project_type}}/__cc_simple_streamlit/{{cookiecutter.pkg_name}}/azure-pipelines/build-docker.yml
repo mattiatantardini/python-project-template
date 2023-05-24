@@ -14,7 +14,7 @@ variables:
   imageRepository: '{{cookiecutter.project}}'
   containerRegistry: '<container-name>.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/docker/Dockerfile'
-  triggerBranchTag: $[replace(variables['Build.SourceBranch'], 'refs/heads/', '')]
+  triggerBranchTag: $[replace(variables['Build.SourceBranch'], 'refs/tags/', '')]
   versionTag: $(Build.SourceBranchName)
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
