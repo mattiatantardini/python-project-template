@@ -53,7 +53,7 @@ version_files = [
 ]
 tag_format = "v$major.$minor.$patch"
 annotated_tag = true
-bump_message = "release $current_version -> $new_version [skip ci]"
+bump_message = "release $current_version -> $new_version"
 
 # --- Semantic release --- #
 [tool.semantic_release]
