@@ -3,7 +3,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 trigger:
-- main
+  tags:
+    include:
+    - v*
 
 resources:
 - repo: self
@@ -14,7 +16,6 @@ variables:
   imageRepository: '{{cookiecutter.project}}'
   containerRegistry: '<container-name>.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/docker/Dockerfile'
-  triggerBranchTag: $[replace(variables['Build.SourceBranch'], 'refs/tags/', '')]
   versionTag: $(Build.SourceBranchName)
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -38,5 +39,5 @@ stages:
         buildContext: '$(Build.SourcesDirectory)'
         # branch name and git tag
         tags: |
-          $(triggerBranchTag)
+          main
           $(versionTag)
