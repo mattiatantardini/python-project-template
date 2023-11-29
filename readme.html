@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Readme &mdash; Python Project Template  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Objectives" href="objectives.html" />
+    <link rel="prev" title="Welcome to Python Project Template documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Python Project Template
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Readme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#python-project-template">python-project-template</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#docs">Docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contribution">Contribution</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="objectives.html">Objectives</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Python Project Template</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Readme</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="readme">
+<h1>Readme<a class="headerlink" href="#readme" title="Permalink to this heading"></a></h1>
+</section>
+<section id="python-project-template">
+<h1>python-project-template<a class="headerlink" href="#python-project-template" title="Permalink to this heading"></a></h1>
+<p>Simple project template for Python projects.</p>
+<p>This repository uses <a class="reference external" href="https://github.com/cookiecutter/cookiecutter"><code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code></a> to define some templates for python projects.</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading"></a></h2>
+<p>The project templates defined in this repository comes with the following tools:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-poetry.org/">poetry</a>: package dependecy management tool.</p></li>
+<li><p><a class="reference external" href="https://pre-commit.com/">pre-commit</a>: run pre-commit hooks .</p></li>
+<li><p><a class="reference external" href="https://docs.pytest.org/en/7.1.x/">pytest</a>: easily write and run tests.</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">sphinx</a>: documentation generation for code and project. Github Action workflows already defined to automatically publish on github pages.</p></li>
+<li><p><a class="reference external" href="https://github.com/python-semantic-release/python-semantic-release">semantic-release</a>: automatic versioning of the code through semantic release.</p></li>
+<li><p>logging: basic configuration for logging using the <code class="docutils literal notranslate"><span class="pre">logging</span></code> python package.</p></li>
+<li><p>ci/cd: pipeline templates for different tasks for different platforms (github, azure).</p></li>
+</ul>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<p>To set up a new project with this template, first you need to install <code class="docutils literal notranslate"><span class="pre">cookiecutter</span></code> (installation in a separate virtualenv is suggested):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">cookiecutter</span>
+</pre></div>
+</div>
+<p>Then, go to the folder where you want to put the new project and just run</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cookiecutter</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">mattiatantardini</span><span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">project</span><span class="o">-</span><span class="n">template</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>You will be asked to choose among the available templates and some additional information (project name, project directory, etc.) to set up the project.</p>
+</section>
+<section id="docs">
+<h2>Docs<a class="headerlink" href="#docs" title="Permalink to this heading"></a></h2>
+<p>You can find modere detailed documentation about this project, how to use this template and an explanation on the tools used in the <a class="reference external" href="https://mattiatantardini.github.io/python-project-template/">github pages</a> of the repo.</p>
+</section>
+<section id="contribution">
+<h2>Contribution<a class="headerlink" href="#contribution" title="Permalink to this heading"></a></h2>
+<p>Any comment, feedback and contribution is very welcomed! Please use the github issue tracker as a preferential way to give your contribution.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Python Project Template documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="objectives.html" class="btn btn-neutral float-right" title="Objectives" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Mattia Tantardini.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
