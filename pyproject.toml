@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "python-project-template"
-version = "0.1.0"
+version = "0.0.0"
 description = "Simple project template for Python projects"
 authors = ["Mattia Tantardini <mattia.tantardini@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 cookiecutter = "^2.1.1"
 
 [tool.poetry.group.dev.dependencies]

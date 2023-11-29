@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "{{cookiecutter.pkg_name}}"
 version = "0.0.0"
-description = "Simple project template for python projects"
+description = "Simple project template for streamlit app"
 authors = ["{{cookiecutter.author}}"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-tantaroba = "^0.4.0"
+python = "^3.11"
+tantaroba = "^0.4.3"
 streamlit = "^1.21.0"
 plotly = "^5.14.1"
 
@@ -56,15 +56,15 @@ annotated_tag = true
 bump_message = "release $current_version -> $new_version"
 
 # --- Semantic release --- #
-[tool.semantic_release]
-# Reference: https://python-semantic-release.readthedocs.io/en/latest/index.html
-version_variable = [
-    "pyproject.toml:version"
-]
-branch = "main"
-hvcs = "github"
-tag_format = "v{version}"
-build_command = ""
-upload_to_pypi = false
-upload_to_repository = false
-commit_subject = "Updated version to v{version}"
+# [tool.semantic_release]
+# # Reference: https://python-semantic-release.readthedocs.io/en/latest/index.html
+# version_variable = [
+#     "pyproject.toml:version"
+# ]
+# branch = "main"
+# hvcs = "github"
+# tag_format = "v{version}"
+# build_command = ""
+# upload_to_pypi = false
+# upload_to_repository = false
+# commit_subject = "Updated version to v{version}"

@@ -1,4 +1,4 @@
-FROM python:3.10.8-slim
+FROM python:3.11.6-slim
 
 # Metadata
 LABEL name={{cookiecutter.project}}
@@ -8,7 +8,7 @@ LABEL maintainer=<author>
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y && apt-get install -y curl
 
-ARG POETRY_VERSION=1.5.0
+ARG POETRY_VERSION=1.7.1
 RUN curl -sSL https://install.python-poetry.org | python3 - --version $POETRY_VERSION
 
 # Set working directory
